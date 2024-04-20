@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerPaneStatistics">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="3.0" layoutY="105.0" prefHeight="394.0" prefWidth="694.0" stylesheets="@../style/dashboardDesign.css">
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <TextField fx:id="setMonth" layoutX="63.0" layoutY="49.0" prefHeight="30.0" prefWidth="79.0" promptText="Es:10" styleClass="textfield" stylesheets="@../style/style.css" />
+                  <Button fx:id="monthButton" layoutX="153.0" layoutY="45.0" mnemonicParsing="false" onAction="#operatorMaxIncomeMonth" prefHeight="40.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@../style/style.css" text="Press" />
+                  <Label layoutX="14.0" layoutY="22.0" text="Dipendente con Entrate Maggiori per Mese di quest'anno" textFill="#2a7926">
+                     <font>
+                        <Font name="Arial Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="56.0" text="Mese:">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="146.0" text="Mese con Massimo Guadagno per Anno:" textFill="#2a7926">
+                     <font>
+                        <Font name="Arial Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="setYear" layoutX="68.0" layoutY="172.0" prefHeight="30.0" prefWidth="79.0" promptText="Es:2023" styleClass="textfield" stylesheets="@../style/style.css" />
+                  <Button fx:id="yearButton" layoutX="158.0" layoutY="168.0" mnemonicParsing="false" onAction="#maxIncomeMonthByYear" prefHeight="40.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@../style/style.css" text="Press" />
+                  <Label layoutX="19.0" layoutY="179.0" text="Anno:">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="setDay" layoutX="73.0" layoutY="299.0" prefHeight="30.0" prefWidth="126.0" promptText="Es: 2018-05-05" styleClass="textfield" stylesheets="@../style/style.css" />
+                  <Button fx:id="dayButton" layoutX="215.0" layoutY="295.0" mnemonicParsing="false" onAction="#dayStatistics" prefHeight="40.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@../style/style.css" text="Press" />
+                  <Label layoutX="14.0" layoutY="306.0" text="Giorno:">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="261.0" text="Statistiche Giornaliere:" textFill="#2a7926">
+                     <font>
+                        <Font name="Arial Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="resultMonth" layoutX="63.0" layoutY="102.0" prefHeight="30.0" prefWidth="269.0" promptText="Result:" />
+                  <TextField fx:id="resultYear" layoutX="63.0" layoutY="219.0" prefHeight="30.0" prefWidth="270.0" promptText="Result:" />
+                  <TextField fx:id="resultDay" layoutX="64.0" layoutY="349.0" prefHeight="30.0" prefWidth="270.0" promptText="Result:" />
+               </children>
+            </AnchorPane>
+            <FontAwesomeIcon fill="#4ea145" glyphName="USER_MD" layoutX="226.0" layoutY="76.0" size="6em" text="" />
+            <Label layoutX="291.0" layoutY="50.0" text="Pharmacist Statistics!" textFill="#3d7b3f">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="626.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="60.0" styleClass="close" stylesheets="@../style/style.css" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+            <FontAwesomeIcon glyphName="ARROW_LEFT" layoutX="650.0" layoutY="31.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

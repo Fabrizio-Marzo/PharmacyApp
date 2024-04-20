@@ -1,0 +1,53 @@
+
+/*Specifico cosi la parte sinistra del nostro PaneLogin visto che è divisa in due */
+/* AnchorPane Sinistra */
+.left-form{ 
+    -fx-background-color: linear-gradient(to bottom right, #2ac925, #9ac79d);
+    -fx-border-color:#000;
+    -fx-border-width:.4px 0px .4px .4px;
+}
+
+/*Specifico che è la parte Destra del nostro PaneLogin visto che è divisa in due  */
+/* AnchorPane Destra */
+.right-form{ 
+    -fx-backround-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.4px .4px .4px 0px;
+}
+
+/* Bottone di chiusura */
+.close{
+    fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+/* Quando ci passo con il cursore diventa del colore specificato */
+.close:hover{
+    -fx-background-color:#f0051d;
+}
+
+/* TextField  */
+.textfield{
+    -fx-bakground-color:transparent;
+    -fx-border-color:#000;
+    -fx-border-width:.4px;
+    -fx-border-radius:.13px;
+    -fx-font-size:13px;
+    -fx-font-family:"Tahoma";
+}
+/* TextField Bordo */
+.textfield:focused{
+    -fx-border-color: linear-gradient(to bottom right, #2ac925, #9ac79d);
+    -fx-border-width:1.4px;
+}
+
+.login-btn{
+    -fx-background-color: linear-gradient(to bottom right, #2ac925, #9ac79d);
+    -fx-background-radius:15px;
+    -fx-cursor:hand;
+    -fx-font-size:14px;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Arial";
+}
+.login-btn:hover{
+    -fx-background-color: linear-gradient(to bottom right, #9ac79d,#2ac925 );
+}
