@@ -20,7 +20,7 @@ val supportedPlatforms = listOf("linux", "mac", "win") // All required for OOP
 dependencies {
     
     // JavaFX: comment out if you do not need them
-    val javaFxVersion = 15
+    val javaFxVersion = 21
     for (platform in supportedPlatforms) {
         for (module in javaFXModules) {
             implementation("org.openjfx:javafx-$module:$javaFxVersion:$platform")
@@ -35,6 +35,8 @@ dependencies {
    // https://mvnrepository.com/artifact/de.jensd/fontawesomefx
     implementation("de.jensd:fontawesomefx:8.2")
 
+    // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
+    implementation("com.mysql:mysql-connector-j:8.1.0")
 
 }
 
