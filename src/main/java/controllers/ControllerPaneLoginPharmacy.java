@@ -13,9 +13,9 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import main.ConnectionProvider;
-import main.FarmaciaDB;
-import main.Utils;
+import db.ConnectionProvider;
+import db.FarmaciaDB;
+import db.Utils;
 
 public class ControllerPaneLoginPharmacy {
     

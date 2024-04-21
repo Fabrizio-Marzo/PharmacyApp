@@ -6,9 +6,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import main.ConnectionProvider;
-import main.FarmaciaDB;
-import main.Utils;
+import db.ConnectionProvider;
+import db.FarmaciaDB;
+import db.Utils;
 
 public class ControllerPaneStatistics {
     @FXML

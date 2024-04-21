@@ -22,9 +22,9 @@ import javafx.scene.control.Dialog;
 import javafx.scene.control.DialogPane;
 import javafx.scene.control.Label;
 import javafx.stage.StageStyle;
-import main.ConnectionProvider;
-import main.FarmaciaDB;
-import main.Utils;
+import db.ConnectionProvider;
+import db.FarmaciaDB;
+import db.Utils;
 
 public class ControllerPaneDashboardPharmacy implements Initializable{
     @FXML

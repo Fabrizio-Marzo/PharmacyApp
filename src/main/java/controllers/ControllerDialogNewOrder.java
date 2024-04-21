@@ -11,9 +11,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
-import main.ConnectionProvider;
-import main.FarmaciaDB;
-import main.Utils;
+import db.ConnectionProvider;
+import db.FarmaciaDB;
+import db.Utils;
 
 public class ControllerDialogNewOrder implements Initializable{
     
