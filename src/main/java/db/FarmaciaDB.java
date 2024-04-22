@@ -48,7 +48,7 @@ public class FarmaciaDB {
     /*
      *  1b) Query di controllo sulla Giacenza, per la Stored Procedure AggiuntaScontrino()
      */
-    public Boolean checkGiacenza(final Integer id_oggetto, final Integer quantità_input) throws SQLException{
+     public Boolean checkGiacenza(final Integer id_oggetto, final Integer quantità_input) throws SQLException{
         CallableStatement s;
         try{
         s = connection.prepareCall("{call checkGiacenza(?,?,?)}");
