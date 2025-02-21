@@ -135,8 +135,10 @@ public class ControllerPaneDashboardPharmacy implements Initializable{
         dashboard_totalCustomers.setText(""+aM);
     }
 
+    @SuppressWarnings("unchecked")
     public void dashboardChart() {
         FarmaciaDB farmacia = new FarmaciaDB(new ConnectionProvider().getMySQLConnection());
+        @SuppressWarnings("rawtypes")
         XYChart.Series series = new XYChart.Series<>();
         List<String> listDate = new ArrayList<>();
         List<Double> listValue = new ArrayList<>();
