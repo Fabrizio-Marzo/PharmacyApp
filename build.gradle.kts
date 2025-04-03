@@ -1,6 +1,7 @@
 plugins {
     java
     application
+    id("com.github.johnrengelman.shadow") version "8.1.0" // Aggiungi il plugin Shadow
 }
 
 repositories {
