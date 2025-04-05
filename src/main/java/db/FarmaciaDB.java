@@ -17,7 +17,9 @@ import dto.VoceScontrino;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import java.sql.CallableStatement;
-
+/**
+ * FarmaciaDB class, connected the Farmacia Class to the DataBase
+ */
 public class FarmaciaDB {
     private static Connection connection;
     @SuppressWarnings("unused") // Prova di Annotazione dove tolgo il Warning

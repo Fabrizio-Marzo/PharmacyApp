@@ -44,6 +44,3 @@ tasks.named<JavaExec>("run") {
         "--add-modules", "javafx.controls,javafx.fxml" // Aggiungi i moduli necessari
     )
 }
-
-
-
